@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Azeez Abidemi | Full-Stack Web Developer</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f5f7fa;
+    color:#333;
+}
+
+header{
+    background:#0f172a;
+    color:Gray;
+    text-align:center;
+    padding:60px 20px;
+}
+
+header h1{
+    font-size:48px;
+}
+
+header p{
+    margin-top:15px;
+    font-size:20px;
+}
+
+nav{
+    background:#1e293b;
+    padding:15px;
+    position:sticky;
+    top:0;
+}
+
+nav ul{
+    display:flex;
+    justify-content:center;
+    list-style:none;
+    gap:30px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#38bdf8;
+}
+
+section{
+    max-width:1100px;
+    margin:auto;
+    padding:60px 20px;
+}
+
+h2{
+    text-align:center;
+    margin-bottom:30px;
+    color:#0f172a;
+}
+
+.about{
+    text-align:center;
+    line-height:1.8;
+}
+
+.skills{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:20px;
+}
+
+.skill{
+    background:white;
+    padding:20px;
+    border-radius:12px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.skill:hover{
+    transform:translateY(-5px);
+}
+
+.projects{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:scale(1.03);
+}
+
+.card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+}
+
+.card h3{
+    padding:15px;
+}
+
+.card p{
+    padding:0 15px 20px;
+}
+
+button{
+    background:#2563eb;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:8px;
+    cursor:pointer;
+    margin-top:20px;
+}
+
+button:hover{
+    background:#1d4ed8;
+}
+
+.contact{
+    text-align:center;
+}
+
+footer{
+    background:#0f172a;
+    color:Gray;
+    text-align:center;
+    padding:30px;
+}
+
+@media(max-width:768px){
+
+header h1{
+font-size:35px;
+}
+
+nav ul{
+flex-direction:column;
+align-items:center;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>Abidemi Azeez</h1>
+
+<p>Future Full-Stack Web Developer & AI Engineer</p>
+
+<button onclick="welcome()">Hire Me</button>
+
+</header>
+
+<nav>
+
+<ul>
+
+<li><a href="#about">About</a></li>
+
+<li><a href="#skills">Skills</a></li>
+
+<li><a href="#projects">Projects</a></li>
+
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+</nav>
+
+<section id="about">
+
+<h2>About Me</h2>
+
+<div class="about">
+
+<p>
+
+Hello!
+
+I'm <strong>Abidemi Azeez Mac</strong>, an aspiring Full-Stack Web Developer.
+
+I enjoy building modern websites and I'm learning HTML, CSS, JavaScript, backend development, and Artificial Intelligence.
+
+My long-term goal is to build intelligent web applications and AI-powered systems for both Individuals and The Society uses.
+
+</p>
+
+</div>
+
+</section>
+
+<section id="skills">
+
+<h2>My Skills</h2>
+
+<div class="skills">
+
+<div class="skill">HTML5</div>
+
+<div class="skill">CSS3</div>
+
+<div class="skill">JavaScript</div>
+
+<div class="skill">Responsive Design</div>
+
+<div class="skill">Git & GitHub</div>
+
+<div class="skill">Problem Solving</div>
+<div class="skill">cybersecurity analyst</div> 
+
+</div>
+
+</section>
+
+<section id="projects">
+
+<h2>Projects</h2>
+
+<div class="projects">
+
+<div class="card">
+
+<img src="https://picsum.photos/600/400?1">
+
+<h3>Personal Portfolio</h3>
+
+<p>Built using HTML, CSS and JavaScript.</p>
+
+</div>
+
+<div class="card">
+
+<img src="https://picsum.photos/600/400?2">
+
+<h3>Weather App</h3>
+
+<p>Displays live weather using JavaScript APIs.</p>
+
+</div>
+
+<div class="card">
+
+<img src="https://picsum.photos/600/400?3">
+
+<h3>Calculator</h3>
+
+<p>A responsive calculator built with JavaScript.</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2>Contact Me</h2>
+
+<div class="contact">
+
+<p>Email: jagovibes3@gmail.com</p>
+
+<p>Whtapp: +234 9129160460</p>
+
+<p>Location: Nigeria</p>
+
+<button onclick="contact()">Say Hello</button>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>© 2026 Abidemi Azeez | All Rights Reserved.</p>
+
+</footer>
+
+<script>
+
+function welcome(){
+
+alert("Thank you for visiting my portfolio!");
+
+}
+
+function contact(){
+
+alert("Thanks for reaching out! I will get back to you soon.");
+
+}
+
+</script>
+
+</body>
+</html>
